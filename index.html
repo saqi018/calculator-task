@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>CALCULATOR</h1>
+        <form name="forms">
+            <div class="calc">
+                <input type="text" id="answer" name="screen">
+                <br>
+                <input type="button" value=" 1 " onclick="appendChar('1')" class="button">
+                <input type="button" value=" 2 " onclick="appendChar('2')" class="button">
+                <input type="button" value=" 3 " onclick="appendChar('3')" class="button">
+                <input type="button" value=" AC " onclick="clearScreen()" class="button">
+                <br>
+                <input type="button" value=" 4 " onclick="appendChar('4')" class="button">
+                <input type="button" value=" 5 " onclick="appendChar('5')" class="button">
+                <input type="button" value=" 6 " onclick="appendChar('6')" class="button">
+                <input type="button" value=" + " onclick="appendChar('+')" class="button">
+                <br>
+                <input type="button" value=" 7 " onclick="appendChar('7')" class="button">
+                <input type="button" value=" 8 " onclick="appendChar('8')" class="button">
+                <input type="button" value=" 9 " onclick="appendChar('9')" class="button">
+                <input type="button" value=" - " onclick="appendChar('-')" class="button">
+                <br>
+                <input type="button" value=" . " onclick="appendChar('.')" class="button">
+                <input type="button" value=" 0 " onclick="appendChar('0')" class="button">
+                <input type="button" value=" = " onclick="calculate()" class="button">
+                <input type="button" value=" * " onclick="appendChar('*')" class="button">
+                <br>
+                <input type="button" value=" ( " onclick="appendChar('(')" class="button">
+                <input type="button" value=" ) " onclick="appendChar(')')" class="button">
+                <input type="button" value=" % " onclick="appendChar('%')" class="button">
+                <input type="button" value=" / " onclick="appendChar('/')" class="button">
+                <br>
+            </div>
+        </form>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
